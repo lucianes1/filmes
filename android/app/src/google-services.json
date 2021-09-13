@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "167170035921",
+    "project_id": "dart-app-filmes",
+    "storage_bucket": "dart-app-filmes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167170035921:android:3a3214e7593e3c337435f0",
+        "android_client_info": {
+          "package_name": "br.com.film.filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167170035921-j0m9e3siq6bfjmdtf8mppt1vp4l8g3m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.film.filmes",
+            "certificate_hash": "4357a5e2c79b775c416c270dd96b81e5a982a37e"
+          }
+        },
+        {
+          "client_id": "167170035921-487bstn4lris0d6gk2p86i179db1u4qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNPXuu4nx98ViEU8ZDgghXY9TrlQw3nGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167170035921-487bstn4lris0d6gk2p86i179db1u4qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
