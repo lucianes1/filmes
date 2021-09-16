@@ -1,9 +1,18 @@
 import 'package:filmes/application/ui/theme_extensions.dart';
+import 'package:filmes/models/genre_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 class FilterTags extends StatelessWidget {
-  const FilterTags({Key? key}) : super(key: key);
+  final GenreModel model;
+  final bool selected;
+  final VoidCallback onPressed;
+  const FilterTags(
+      {Key? key,
+      required this.model,
+      this.selected = false,
+      required this.onPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,12 +20,12 @@ class FilterTags extends StatelessWidget {
       margin: EdgeInsets.all(5),
       constraints: BoxConstraints(minWidth: 100, minHeight: 30),
       decoration: BoxDecoration(
-        color: context.themeRed,
+        color: selected ? context.themeRed : Colors.black,
         borderRadius: BorderRadius.circular(35),
       ),
       child: Center(
         child: Text(
-          'Infantil',
+          model.name,
           style: TextStyle(
             color: Colors.white,
             fontSize: 14,
