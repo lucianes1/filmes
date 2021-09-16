@@ -1,3 +1,5 @@
+import 'package:filmes/modules/movies/widgets/movies_filters.dart';
+import 'package:filmes/modules/movies/widgets/movies_header.dart';
 import 'package:flutter/material.dart';
 
 class MoviesPage extends StatelessWidget {
@@ -5,6 +7,11 @@ class MoviesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text('Movies page'));
+    return ListView(
+      children: [
+        MoviesHeader(),
+        MoviesFilters(),
+      ],
+    );
   }
 }
