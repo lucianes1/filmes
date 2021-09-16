@@ -1,4 +1,5 @@
 import 'package:filmes/application/bindings/application_bindings.dart';
+import 'package:filmes/application/ui/filmes_app_ui_config.dart';
 import 'package:filmes/modules/Splash/splash_module.dart';
 import 'package:filmes/modules/home/home_module.dart';
 import 'package:filmes/modules/login/login_module.dart';
@@ -20,11 +21,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: FilmesAppUiConfig.title,
       initialBinding: ApplicationBindings(),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: FilmesAppUiConfig.theme,
       getPages: [
         ...SplashModule().routers,
         ...LoginModule().routers,
