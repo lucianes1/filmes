@@ -12,10 +12,11 @@ class GenresRepositoryImpl implements GenresRespository {
 
   @override
   Future<List<GenreModel>> getGenres() async {
-    final result =
-        await _restClient.get<List<GenreModel>>('/genre/movie/list', query: {
-      'api_key': RemoteConfig.instance.getString('api_token'),
-    }, decoder: (data) {
+    final result = await _restClient.get<List<GenreModel>>('/genre/movie/list',
+        query: {
+          'api_key': RemoteConfig.instance.getString('api_token'),
+          'language': 'pt-br'
+        }, decoder: (data) {
       final resultData = data['genres'];
       if (resultData != null) {
         return resultData
