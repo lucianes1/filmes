@@ -1,6 +1,5 @@
 import 'package:filmes/models/movie_model.dart';
 import 'package:filmes/repositories/movies/movies_repository.dart';
-import 'package:filmes/repositories/movies/movies_repository_impl.dart';
 import 'package:filmes/services/movies/movies_service.dart';
 
 class MoviesServiceImpl implements MoviesService {

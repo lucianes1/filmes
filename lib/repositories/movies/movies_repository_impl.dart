@@ -13,7 +13,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
   Future<List<MovieModel>> getPopularMovies() async {
     final result =
         await _restClient.get<List<MovieModel>>('/movie/popular', query: {
-      'api_key': RemoteConfig.instance.getString('api_key'),
+      'api_key': RemoteConfig.instance.getString('api_token'),
       'language': 'pt-br',
       'page': '1',
     }, decoder: (data) {
@@ -37,7 +37,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
   Future<List<MovieModel>> geTopRatedMovies() async {
     final result =
         await _restClient.get<List<MovieModel>>('/movie/top_rated', query: {
-      'api_key': RemoteConfig.instance.getString('api_key'),
+      'api_key': RemoteConfig.instance.getString('api_token'),
       'language': 'pt-br',
       'page': '1',
     }, decoder: (data) {
