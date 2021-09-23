@@ -23,7 +23,6 @@ class MovieDetailTitle extends StatelessWidget {
         RatingStars(
           value: (movie?.stars ?? 1) / 2,
           starSize: 14,
-          valueLabelVisibility: false,
           starColor: context.themeOrange,
         ),
         SizedBox(
