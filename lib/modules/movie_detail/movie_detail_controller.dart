@@ -33,10 +33,9 @@ class MovieDetailController extends GetxController
       final movieDetailData = await _moviesService.getDetail(movieId);
       movie.value = movieDetailData;
       loading(false);
-      movie(movieDetailData);
     } catch (e, s) {
-      print(e);
-      print(s);
+      print('teste e $e');
+      print('teste s $s');
       loading(false);
       message(MessageModel.error(
           title: 'Erro', message: 'Erro ao buscar detalhe do filme'));

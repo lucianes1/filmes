@@ -71,7 +71,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
     });
 
     if (result.hasError) {
-      print('Erro ao buscar detalhes do filme');
+      print('Erro ao buscar detalhes do filme [${result.statusText}]');
       throw Exception('Erro ao buscar detalhe do filme');
     }
 
